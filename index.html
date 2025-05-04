@@ -45,7 +45,7 @@
                 </div>
                 <div class="mb-3 font-sans text-lg">
                     <p id="triangleOutput">Area:&nbsp;&nbsp;&nbsp;&nbsp; <span id="answerOfTriangle"></span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cm<sup>2</sup></p>
-                    <p class="font-sans" id="validAlert">Please inter a valid number!</p>
+                    <p class="font-sans" id="validAlert">Please Enter a Valid Number!</p>
                 </div>
                 <div class="card-actions font-sans">    
                   <button class="btn btn-primary text-xl rounded-lg py-7 w-80 bg-[#1090D8] border-none text-white hover:bg-[#0b79b0] transition duration-300 cursor-pointer" id="triangleCalculateBtn">Calculate</button>
@@ -64,15 +64,15 @@
                   <h2 class="card-title font-sans">Rectangle</h2>
                   <p class="mb-3 font-sans text-lg">Area (A) = W X l</p>
                   <div class="mb-3 text-lg">
-                      <input type="text" name="" id="" placeholder="w" class="w-24 px-4 py-3 font-sans border-none bg-[#F1F1F1] rounded-sm"> cm
-                      <input type="text" name="" id="" placeholder="l" class="w-24 px-4 py-3 font-sans border-none bg-[#F1F1F1] rounded-sm"> cm
+                      <input type="text" name="" id="rectangleInputW" placeholder="w" class="w-24 px-4 py-3 font-sans border-none bg-[#F1F1F1] rounded-sm"> cm
+                      <input type="text" name="" id="rectangleInputL" placeholder="l" class="w-24 px-4 py-3 font-sans border-none bg-[#F1F1F1] rounded-sm"> cm
                   </div>
                   <div class="mb-3 font-sans text-lg">
-                      <p>Area:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cm<sup>2</sup></p>
-                      
+                      <p id="rectangleAns">Area:&nbsp;&nbsp;&nbsp;&nbsp; <span id="rectangleOutput"></span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cm<sup>2</sup></p>
+                      <p class="font-sans" id="RvalidAlert"></p>
                   </div>
                   <div class="card-actions font-sans">    
-                    <button class="btn btn-primary text-xl rounded-lg py-7 w-80 bg-[#1090D8] border-none text-white hover:bg-[#0b79b0] transition duration-300 cursor-pointer">Calculate</button>
+                    <button class="btn btn-primary text-xl rounded-lg py-7 w-80 bg-[#1090D8] border-none text-white hover:bg-[#0b79b0] transition duration-300 cursor-pointer" id="rectangleCalculateBtn">Calculate</button>
                   </div>
                 </div>
               </div>
@@ -176,5 +176,6 @@
         
     </main>
     <script src="./JS/triangle.js"></script>
+    <script src="./JS/rectangle.js"></script>
 </body>
 </html>
