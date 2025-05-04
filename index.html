@@ -136,15 +136,15 @@
                   <h2 class="card-title font-sans">Pentagon</h2>
                   <p class="mb-3 font-sans text-lg">Area (A) = 0.5 X p X b</p>
                   <div class="mb-3 text-lg">
-                      <input type="text" name="" id="" placeholder="p" class="w-24 px-4 py-3 font-sans border-none bg-[#F1F1F1] rounded-sm"> cm
-                      <input type="text" name="" id="" placeholder="b" class="w-24 px-4 py-3 font-sans border-none bg-[#F1F1F1] rounded-sm"> cm
+                      <input type="text" name="" id="pentagonInputdP" placeholder="p" class="w-24 px-4 py-3 font-sans border-none bg-[#F1F1F1] rounded-sm"> cm
+                      <input type="text" name="" id="pentagonInputdB" placeholder="b" class="w-24 px-4 py-3 font-sans border-none bg-[#F1F1F1] rounded-sm"> cm
                   </div>
                   <div class="mb-3 font-sans text-lg">
-                      <p>Area:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cm<sup>2</sup></p>
-                      
+                      <p id="pentagonAns">Area:&nbsp;&nbsp;&nbsp;&nbsp; <span id="pentagonOutput"></span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cm<sup>2</sup></p>
+                      <p id="pentagonvalidAlert"></p>
                   </div>
                   <div class="card-actions font-sans">    
-                    <button class="btn btn-primary text-xl rounded-lg py-7 w-80 bg-[#1090D8] border-none text-white hover:bg-[#0b79b0] transition duration-300 cursor-pointer">Calculate</button>
+                    <button class="btn btn-primary text-xl rounded-lg py-7 w-80 bg-[#1090D8] border-none text-white hover:bg-[#0b79b0] transition duration-300 cursor-pointer" id="pentagonCalculateBtn">Calculate</button>
                   </div>
                 </div>
               </div>
@@ -179,5 +179,6 @@
     <script src="./JS/rectangle.js"></script>
     <script src="./JS/parallelogram.js"></script>
     <script src="./JS/rhombus.js"></script>
+    <script src="./JS/pentagon.js"></script>
 </body>
 </html>
