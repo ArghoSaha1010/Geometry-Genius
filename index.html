@@ -88,15 +88,15 @@
                   <h2 class="card-title font-sans">Parallelogram</h2>
                   <p class="mb-3 font-sans text-lg">Area (A) = b X h</p>
                   <div class="mb-3 text-lg">
-                      <input type="text" name="" id="" placeholder="b" class="w-24 px-4 py-3 font-sans border-none bg-[#F1F1F1] rounded-sm"> cm
-                      <input type="text" name="" id="" placeholder="h" class="w-24 px-4 py-3 font-sans border-none bg-[#F1F1F1] rounded-sm"> cm
+                      <input type="text" name="" id="parallelogramInputB" placeholder="b" class="w-24 px-4 py-3 font-sans border-none bg-[#F1F1F1] rounded-sm"> cm
+                      <input type="text" name="" id="parallelogramInputH" placeholder="h" class="w-24 px-4 py-3 font-sans border-none bg-[#F1F1F1] rounded-sm"> cm
                   </div>
                   <div class="mb-3 font-sans text-lg">
-                      <p>Area:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cm<sup>2</sup></p>
-                      
+                      <p id="parallelogramAns">Area:&nbsp;&nbsp;&nbsp;&nbsp; <span id="parallelogramOutput"></span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cm<sup>2</sup></p>
+                      <p class="font-sans" id="PvalidAlert"></p>
                   </div>
                   <div class="card-actions font-sans">    
-                    <button class="btn btn-primary text-xl rounded-lg py-7 w-80 bg-[#1090D8] border-none text-white hover:bg-[#0b79b0] transition duration-300 cursor-pointer">Calculate</button>
+                    <button class="btn btn-primary text-xl rounded-lg py-7 w-80 bg-[#1090D8] border-none text-white hover:bg-[#0b79b0] transition duration-300 cursor-pointer" id="parallelCalculateBtn">Calculate</button>
                   </div>
                 </div>
               </div>
@@ -112,15 +112,15 @@
                   <h2 class="card-title font-sans">Rhombus</h2>
                   <p class="mb-3 font-sans text-lg">Area (A) = 0.5 X d<sub>1</sub> X d<sub>2</sub></p>
                   <div class="mb-3 text-lg">
-                      <input type="text" name="" id="" placeholder="d&#8321;" class="w-24 px-4 py-3 font-sans border-none bg-[#F1F1F1] rounded-sm"> cm
-                      <input type="text" name="" id="" placeholder="d&#8322;" class="w-24 px-4 py-3 font-sans border-none bg-[#F1F1F1] rounded-sm"> cm
+                      <input type="text" name="" id="rhombusInputd1" placeholder="d&#8321;" class="w-24 px-4 py-3 font-sans border-none bg-[#F1F1F1] rounded-sm"> cm
+                      <input type="text" name="" id="rhombusInputd2" placeholder="d&#8322;" class="w-24 px-4 py-3 font-sans border-none bg-[#F1F1F1] rounded-sm"> cm
                   </div>
                   <div class="mb-3 font-sans text-lg">
-                      <p>Area:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cm<sup>2</sup></p>
-                      
+                      <p id="rhombusAns">Area:&nbsp;&nbsp;&nbsp;&nbsp; <span id="rhombusOutput"></span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cm<sup>2</sup></p>
+                      <p id="RHvalidAlert"></p>
                   </div>
                   <div class="card-actions font-sans">    
-                    <button class="btn btn-primary text-xl rounded-lg py-7 w-80 bg-[#1090D8] border-none text-white hover:bg-[#0b79b0] transition duration-300 cursor-pointer">Calculate</button>
+                    <button class="btn btn-primary text-xl rounded-lg py-7 w-80 bg-[#1090D8] border-none text-white hover:bg-[#0b79b0] transition duration-300 cursor-pointer" id="rhombusCalculateBtn">Calculate</button>
                   </div>
                 </div>
               </div>
@@ -177,5 +177,7 @@
     </main>
     <script src="./JS/triangle.js"></script>
     <script src="./JS/rectangle.js"></script>
+    <script src="./JS/parallelogram.js"></script>
+    <script src="./JS/rhombus.js"></script>
 </body>
 </html>
