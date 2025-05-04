@@ -15,7 +15,7 @@
                     <h1 class="font-bold text-xl font-sans">Interactive</h1>
                     <p class="text-gray-400 font-sans">Geometry Genius</p>
                 </div>
-                <button class="btn bg-[#00bfff] font-bold text-white text-xl px-10 py-2 rounded-lg">
+                <button class="btn bg-[#00bfff] font-bold text-white text-xl px-10 py-2 rounded-lg hover:bg-[#0b79b0] transition duration-300">
                     Blog
                 </button>
             </div>
@@ -24,7 +24,7 @@
     </header>
     <main>
         <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-5 sm:gap-x-5 px-4">
-            <div class="card bg-base-100 w-full max-w-sm mx-auto shadow-sm">
+            <div class="card bg-base-100 w-full max-w-sm mx-auto shadow-sm hover:bg-[#FBBCED]">
               <figure class="px-10 pt-10">
                 <img
                   src="./assets/triangle.png"
@@ -32,94 +32,140 @@
                   class="rounded-xl mb-[3.06rem] h-[12.125rem] xl:h-[15rem]" />
               </figure>
               <div class="card-body items-center text-center">
-                <h2 class="card-title">Triangle</h2>
-                <p>Area (A) = 0.5 X b X h</p>
-                
-                <div class="card-actions">
-                  <button class="btn btn-primary">Buy Now</button>
+                <h2 class="card-title font-sans">Triangle</h2>
+                <p class="mb-3 font-sans text-lg">Area (A) = 0.5 X b X h</p>
+                <div class="mb-3 text-lg">
+                    <input type="text" name="" id="" placeholder="b" class="w-24 px-4 py-3 font-sans border-none bg-[#F1F1F1] rounded-sm"> cm
+                    <input type="text" name="" id="" placeholder="h" class="w-24 px-4 py-3 font-sans border-none bg-[#F1F1F1] rounded-sm"> cm
+                </div>
+                <div class="mb-3 font-sans text-lg">
+                    <p>Area:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cm<sup>2</sup></p>
+                    
+                </div>
+                <div class="card-actions font-sans">    
+                  <button class="btn btn-primary text-xl rounded-lg py-7 w-80 bg-[#1090D8] border-none text-white hover:bg-[#0b79b0] transition duration-300 cursor-pointer">Calculate</button>
                 </div>
               </div>
             </div>
           
-            <div class="card bg-base-100 w-full max-w-sm mx-auto shadow-sm">
-              <figure class="px-10 pt-10">
-                <img
-                  src="./assets/rectangle.png"
-                  alt="Shoes"
-                  class="rounded-xl mb-[3.06rem] h-[12.125rem] xl:h-[15rem]" />
-              </figure>
-              <div class="card-body items-center text-center">
-                <h2 class="card-title">Card Title</h2>
-                <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
-                <div class="card-actions">
-                  <button class="btn btn-primary">Buy Now</button>
+            <div class="card bg-base-100 w-full max-w-sm mx-auto shadow-sm hover:bg-[#69C7F0]">
+                <figure class="px-10 pt-10">
+                  <img
+                    src="./assets/rectangle.png"
+                    alt="Shoes"
+                    class="rounded-xl mb-[3.06rem] h-[12.125rem] xl:h-[15rem]" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title font-sans">Rectangle</h2>
+                  <p class="mb-3 font-sans text-lg">Area (A) = W X l</p>
+                  <div class="mb-3 text-lg">
+                      <input type="text" name="" id="" placeholder="w" class="w-24 px-4 py-3 font-sans border-none bg-[#F1F1F1] rounded-sm"> cm
+                      <input type="text" name="" id="" placeholder="l" class="w-24 px-4 py-3 font-sans border-none bg-[#F1F1F1] rounded-sm"> cm
+                  </div>
+                  <div class="mb-3 font-sans text-lg">
+                      <p>Area:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cm<sup>2</sup></p>
+                      
+                  </div>
+                  <div class="card-actions font-sans">    
+                    <button class="btn btn-primary text-xl rounded-lg py-7 w-80 bg-[#1090D8] border-none text-white hover:bg-[#0b79b0] transition duration-300 cursor-pointer">Calculate</button>
+                  </div>
                 </div>
               </div>
-            </div>
           
-            <div class="card bg-base-100 w-full max-w-sm mx-auto shadow-sm">
-              <figure class="px-10 pt-10">
-                <img
-                  src="./assets/parallelogram.png"
-                  alt="Shoes"
-                  class="rounded-xl mb-[3.06rem] h-[12.125rem] xl:h-[15rem]" />
-              </figure>
-              <div class="card-body items-center text-center">
-                <h2 class="card-title">Card Title</h2>
-                <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
-                <div class="card-actions">
-                  <button class="btn btn-primary">Buy Now</button>
+              <div class="card bg-base-100 w-full max-w-sm mx-auto shadow-sm hover:bg-[#FFDFAF]">
+                <figure class="px-10 pt-10">
+                  <img
+                    src="./assets/parallelogram.png"
+                    alt="Shoes"
+                    class="rounded-xl mb-[3.06rem] h-[12.125rem] xl:h-[15rem]" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title font-sans">Parallelogram</h2>
+                  <p class="mb-3 font-sans text-lg">Area (A) = b X h</p>
+                  <div class="mb-3 text-lg">
+                      <input type="text" name="" id="" placeholder="b" class="w-24 px-4 py-3 font-sans border-none bg-[#F1F1F1] rounded-sm"> cm
+                      <input type="text" name="" id="" placeholder="h" class="w-24 px-4 py-3 font-sans border-none bg-[#F1F1F1] rounded-sm"> cm
+                  </div>
+                  <div class="mb-3 font-sans text-lg">
+                      <p>Area:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cm<sup>2</sup></p>
+                      
+                  </div>
+                  <div class="card-actions font-sans">    
+                    <button class="btn btn-primary text-xl rounded-lg py-7 w-80 bg-[#1090D8] border-none text-white hover:bg-[#0b79b0] transition duration-300 cursor-pointer">Calculate</button>
+                  </div>
                 </div>
               </div>
-            </div>
           
-            <div class="card bg-base-100 w-full max-w-sm mx-auto shadow-sm">
-              <figure class="px-10 pt-10">
-                <img
-                  src="./assets/rhombus.png"
-                  alt="Shoes"
-                  class="rounded-xl mb-[3.06rem] h-[12.125rem] xl:h-[15rem]" />
-              </figure>
-              <div class="card-body items-center text-center">
-                <h2 class="card-title">Card Title</h2>
-                <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
-                <div class="card-actions">
-                  <button class="btn btn-primary">Buy Now</button>
+              <div class="card bg-base-100 w-full max-w-sm mx-auto shadow-sm hover:bg-[#C1F5D2]">
+                <figure class="px-10 pt-10">
+                  <img
+                    src="./assets/rhombus.png"
+                    alt="Shoes"
+                    class="rounded-xl mb-[3.06rem] h-[12.125rem] xl:h-[15rem]" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title font-sans">Rhombus</h2>
+                  <p class="mb-3 font-sans text-lg">Area (A) = 0.5 X d<sub>1</sub> X d<sub>2</sub></p>
+                  <div class="mb-3 text-lg">
+                      <input type="text" name="" id="" placeholder="d&#8321;" class="w-24 px-4 py-3 font-sans border-none bg-[#F1F1F1] rounded-sm"> cm
+                      <input type="text" name="" id="" placeholder="d&#8322;" class="w-24 px-4 py-3 font-sans border-none bg-[#F1F1F1] rounded-sm"> cm
+                  </div>
+                  <div class="mb-3 font-sans text-lg">
+                      <p>Area:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cm<sup>2</sup></p>
+                      
+                  </div>
+                  <div class="card-actions font-sans">    
+                    <button class="btn btn-primary text-xl rounded-lg py-7 w-80 bg-[#1090D8] border-none text-white hover:bg-[#0b79b0] transition duration-300 cursor-pointer">Calculate</button>
+                  </div>
                 </div>
               </div>
-            </div>
           
-            <div class="card bg-base-100 w-full max-w-sm mx-auto shadow-sm">
-              <figure class="px-10 pt-10">
-                <img
-                  src="./assets/pentagon.png"
-                  alt="Shoes"
-                  class="rounded-xl mb-[3.06rem] h-[12.125rem] xl:h-[15rem]" />
-              </figure>
-              <div class="card-body items-center text-center">
-                <h2 class="card-title">Card Title</h2>
-                <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
-                <div class="card-actions">
-                  <button class="btn btn-primary">Buy Now</button>
+              <div class="card bg-base-100 w-full max-w-sm mx-auto shadow-sm hover:bg-[#E4D7FB]">
+                <figure class="px-10 pt-10">
+                  <img
+                    src="./assets/pentagon.png"
+                    alt="Shoes"
+                    class="rounded-xl mb-[3.06rem] h-[12.125rem] xl:h-[15rem]" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title font-sans">Pentagon</h2>
+                  <p class="mb-3 font-sans text-lg">Area (A) = 0.5 X p X b</p>
+                  <div class="mb-3 text-lg">
+                      <input type="text" name="" id="" placeholder="p" class="w-24 px-4 py-3 font-sans border-none bg-[#F1F1F1] rounded-sm"> cm
+                      <input type="text" name="" id="" placeholder="b" class="w-24 px-4 py-3 font-sans border-none bg-[#F1F1F1] rounded-sm"> cm
+                  </div>
+                  <div class="mb-3 font-sans text-lg">
+                      <p>Area:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cm<sup>2</sup></p>
+                      
+                  </div>
+                  <div class="card-actions font-sans">    
+                    <button class="btn btn-primary text-xl rounded-lg py-7 w-80 bg-[#1090D8] border-none text-white hover:bg-[#0b79b0] transition duration-300 cursor-pointer">Calculate</button>
+                  </div>
                 </div>
               </div>
-            </div>
           
-            <div class="card bg-base-100 w-full max-w-sm mx-auto shadow-sm">
-              <figure class="px-10 pt-10">
-                <img
-                  src="./assets/ellipse.png"
-                  alt="Shoes"
-                  class="rounded-xl mb-[3.06rem] h-[12.125rem] xl:h-[15rem]" />
-              </figure>
-              <div class="card-body items-center text-center">
-                <h2 class="card-title">Card Title</h2>
-                <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
-                <div class="card-actions">
-                  <button class="btn btn-primary">Buy Now</button>
+              <div class="card bg-base-100 w-full max-w-sm mx-auto shadow-sm hover:bg-[#FDD3D3]">
+                <figure class="px-10 pt-10">
+                  <img
+                    src="./assets/ellipse.png"
+                    alt="Shoes"
+                    class="rounded-xl mb-[3.06rem] h-[12.125rem] xl:h-[15rem]" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title font-sans">Ellipse</h2>
+                  <p class="mb-3 font-sans text-lg">Area (A) = &pi; X a X b</p>
+                  <div class="mb-3 text-lg">
+                      <input type="text" name="" id="" placeholder="a" class="w-24 px-4 py-3 font-sans border-none bg-[#F1F1F1] rounded-sm"> cm
+                      <input type="text" name="" id="" placeholder="b" class="w-24 px-4 py-3 font-sans border-none bg-[#F1F1F1] rounded-sm"> cm
+                  </div>
+                  <div class="mb-3 font-sans text-lg">
+                      <p>Area:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cm<sup>2</sup></p>
+                  </div>
+                  <div class="card-actions font-sans">    
+                    <button class="btn btn-primary text-xl rounded-lg py-7 w-80 bg-[#1090D8] border-none text-white hover:bg-[#0b79b0] transition duration-300 cursor-pointer">Buy Now</button>
+                  </div>
                 </div>
               </div>
-            </div>
           </section>
           
         
