@@ -10,7 +10,13 @@ document.getElementById("ellipseCalculateBtn").addEventListener("click", functio
         document.getElementById("ellipseOutput").innerText = ellipseArea.toFixed(2);
         document.getElementById("EvalidAlert").style.display = "none";
         document.getElementById("ellipseAns").style.display = "block";
+
+        document.getElementById("triangleInputB").style.outline = "none";
+        document.getElementById("triangleInputH").style.outline = "none";
     } else {
+        document.getElementById("triangleInputB").style.outline = "2px solid red";
+        document.getElementById("triangleInputH").style.outline = "2px solid red";
+        
         document.getElementById("EvalidAlert").innerText = "Please Enter a Valid Number!";
         document.getElementById("EvalidAlert").style.display = "block";
         document.getElementById("ellipseAns").style.display = "none";

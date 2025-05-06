@@ -10,8 +10,14 @@ document.getElementById("rectangleCalculateBtn").addEventListener("click", funct
         document.getElementById("rectangleOutput").innerText = rectangleArea.toFixed(2);
         document.getElementById("RvalidAlert").style.display = "none";
         document.getElementById("rectangleAns").style.display = "block";
+
+        document.getElementById("triangleInputB").style.outline = "none";
+        document.getElementById("triangleInputH").style.outline = "none";
     }
     else {
+        document.getElementById("triangleInputB").style.outline = "2px solid red";
+        document.getElementById("triangleInputH").style.outline = "2px solid red";
+        
         document.getElementById("RvalidAlert").innerText = "Please Enter a Valid Number!";
         document.getElementById("RvalidAlert").style.display = "block";
         document.getElementById("rectangleAns").style.display = "none";

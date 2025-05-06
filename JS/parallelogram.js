@@ -3,6 +3,9 @@ document.getElementById("parallelCalculateBtn").addEventListener("click", functi
     const h = document.getElementById("parallelogramInputH").value.trim();
 
     if (isNaN(b) || isNaN(h) || b <= 0 || h <= 0) {
+        document.getElementById("triangleInputB").style.outline = "2px solid red";
+        document.getElementById("triangleInputH").style.outline = "2px solid red";
+        
         document.getElementById("PvalidAlert").innerText = "Please Enter a Valid Number!";
         document.getElementById("PvalidAlert").style.display = "block";
         document.getElementById("parallelogramAns").style.display = "none";
@@ -11,6 +14,9 @@ document.getElementById("parallelCalculateBtn").addEventListener("click", functi
         document.getElementById("parallelogramOutput").innerText = parallelogramArea.toFixed(2);
         document.getElementById("PvalidAlert").style.display = "none";
         document.getElementById("parallelogramAns").style.display = "block";
+
+        document.getElementById("triangleInputB").style.outline = "none";
+        document.getElementById("triangleInputH").style.outline = "none";
     }
 
     document.getElementById("parallelogramInputB").value = "";
